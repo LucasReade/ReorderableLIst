@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reoderable List</title>
+    <script src="Reorder.js"></script>
+    <style>
+        ul{
+            border:1px solid #000;
+            list-style: none;
+            margin: 0;
+            padding: 5px;
+        }
+        li{
+            cursor: default;
+            border: 1px solid #999;
+            display: block;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            user-select: none;
+        }
+        li:hover{
+            background: #efefef;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul id='List1'>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    
+    <script>
+        let list = document.querySelector('#List1'); 
+        let relist = new ReOrder(list);
+    </script>
+    </body>
+</html>
